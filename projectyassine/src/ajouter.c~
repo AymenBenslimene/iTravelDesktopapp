@@ -1,0 +1,14 @@
+#include "ajouter.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+void ajouter(char name[],int prises,char descib[]){
+
+FILE *f;
+f=fopen("users.txt","a+");
+if(f!=NULL){
+
+fprintf(f,"%s %d %s \n",name,prises,descib);
+fclose(f);}
+}
+

@@ -16,8 +16,7 @@ project9_SOURCES = \
         afficher.c afficher.h \
         ajouter2.c ajouter2.h \
         afficher2.c afficher2.h \
-        ajouter3.c ajouter3.h \
-        afficher3.c afficher3.h
+        ajouter3.c ajouter3.h 
 
 project9_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
 

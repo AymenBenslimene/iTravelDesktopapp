@@ -91,7 +91,9 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_project9_OBJECTS = main.$(OBJEXT) support.$(OBJEXT) \
-	interface.$(OBJEXT) callbacks.$(OBJEXT)
+	interface.$(OBJEXT) callbacks.$(OBJEXT) ajouter.$(OBJEXT) \
+	afficher.$(OBJEXT) ajouter2.$(OBJEXT) afficher2.$(OBJEXT) \
+	ajouter3.$(OBJEXT) afficher3.$(OBJEXT)
 project9_OBJECTS = $(am_project9_OBJECTS)
 am__DEPENDENCIES_1 =
 project9_DEPENDENCIES = $(am__DEPENDENCIES_1)
@@ -269,7 +271,13 @@ project9_SOURCES = \
 	main.c \
 	support.c support.h \
 	interface.c interface.h \
-	callbacks.c callbacks.h
+	callbacks.c callbacks.h \
+        ajouter.c ajouter.h \
+        afficher.c afficher.h \
+        ajouter2.c ajouter2.h \
+        afficher2.c afficher2.h \
+        ajouter3.c ajouter3.h \
+        afficher3.c afficher3.h
 
 project9_LDADD = -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype   $(INTLLIBS)
 all: all-am
@@ -359,6 +367,12 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
+include ./$(DEPDIR)/afficher.Po
+include ./$(DEPDIR)/afficher2.Po
+include ./$(DEPDIR)/afficher3.Po
+include ./$(DEPDIR)/ajouter.Po
+include ./$(DEPDIR)/ajouter2.Po
+include ./$(DEPDIR)/ajouter3.Po
 include ./$(DEPDIR)/callbacks.Po
 include ./$(DEPDIR)/interface.Po
 include ./$(DEPDIR)/main.Po

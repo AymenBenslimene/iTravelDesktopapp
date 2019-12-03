@@ -1,0 +1,1 @@
+void ajouter(char until[],char name[],char descib[]);

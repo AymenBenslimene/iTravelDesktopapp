@@ -91,7 +91,9 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_project9_OBJECTS = main.$(OBJEXT) support.$(OBJEXT) \
-	interface.$(OBJEXT) callbacks.$(OBJEXT)
+	interface.$(OBJEXT) callbacks.$(OBJEXT) ajouter.$(OBJEXT) \
+	afficher.$(OBJEXT) ajouter2.$(OBJEXT) afficher2.$(OBJEXT) \
+	ajouter3.$(OBJEXT) afficher3.$(OBJEXT)
 project9_OBJECTS = $(am_project9_OBJECTS)
 am__DEPENDENCIES_1 =
 project9_DEPENDENCIES = $(am__DEPENDENCIES_1)
@@ -269,7 +271,13 @@ project9_SOURCES = \
 	main.c \
 	support.c support.h \
 	interface.c interface.h \
-	callbacks.c callbacks.h
+	callbacks.c callbacks.h \
+        ajouter.c ajouter.h \
+        afficher.c afficher.h \
+        ajouter2.c ajouter2.h \
+        afficher2.c afficher2.h \
+        ajouter3.c ajouter3.h \
+        afficher3.c afficher3.h
 
 project9_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
 all: all-am
@@ -359,6 +367,12 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/afficher.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/afficher2.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/afficher3.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ajouter.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ajouter2.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ajouter3.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/callbacks.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/interface.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/main.Po@am__quote@

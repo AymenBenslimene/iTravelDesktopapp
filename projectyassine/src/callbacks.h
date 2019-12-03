@@ -46,3 +46,40 @@ on_buttonhotels_clicked                (GtkWidget       *objet,
 void
 on_button_offree_clicked               (GtkWidget       *objet,
                                         gpointer         user_data);
+
+void
+on_hotelsloul_clicked                  (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_offreofthedays_clicked              (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_leasingloul_clicked                 (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_saved_hotels_to_treeview_add_clicked
+                                        (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_afficher_clicked                    (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_afficher2_clicked                   (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_saved_to_text_offre_clicked         (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_afficher3_clicked                   (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_saved3_to_users3_clicked            (GtkWidget       *objet,
+                                        gpointer         user_data);
