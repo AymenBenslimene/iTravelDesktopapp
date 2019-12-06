@@ -1,0 +1,26 @@
+## Process this file with automake to produce Makefile.in
+
+INCLUDES = \
+	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
+	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+	@PACKAGE_CFLAGS@
+
+bin_PROGRAMS = project9
+
+project9_SOURCES = \
+	main.c \
+	support.c support.h \
+	interface.c interface.h \
+	callbacks.c callbacks.h \
+        ajouter.c ajouter.h \
+        afficher.c afficher.h \
+        ajouter2.c ajouter2.h \
+        afficher2.c afficher2.h \
+        ajouter3.c ajouter3.h \
+        afficher3.c afficher3.h \
+        suprimer.c suprimer.h \
+        suprimer2.c suprimer2.h \
+        suprimer3.c suprimer3.h
+
+project9_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
+
